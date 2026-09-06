@@ -13,6 +13,11 @@
         <input id="todo-input" type="text" placeholder="Enter a todo" />
         <button id="add-button" onclick="addTodo()">Add</button>
       </div>
+      <div class="filter-section" aria-label="Filter todos">
+        <button class="filter-button active" data-filter="all" onclick="setFilter('all')">All</button>
+        <button class="filter-button" data-filter="active" onclick="setFilter('active')">Active</button>
+        <button class="filter-button" data-filter="completed" onclick="setFilter('completed')">Completed</button>
+      </div>
       <ul id="todoList"></ul>
     </div>
     <script src="script.js"></script>
